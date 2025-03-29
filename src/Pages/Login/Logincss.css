@@ -1,0 +1,44 @@
+@keyframes float-1 {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-25px) rotate(10deg); }
+  }
+  
+  @keyframes float-2 {
+    0%, 100% { transform: translateX(0) rotate(0deg); }
+    50% { transform: translateX(25px) rotate(15deg); }
+  }
+  
+  @keyframes float-3 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(15px, -15px) rotate(-10deg); }
+  }
+  
+  @keyframes float-4 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-10px, 10px) scale(1.1); }
+  }
+  
+  .animate-float-1 {
+    animation: float-1 12s ease-in-out infinite;
+  }
+  
+  .animate-float-2 {
+    animation: float-2 15s ease-in-out infinite;
+  }
+  
+  .animate-float-3 {
+    animation: float-3 10s ease-in-out infinite;
+  }
+  
+  .animate-float-4 {
+    animation: float-4 18s ease-in-out infinite;
+  }
+  
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .animate-spin-slow {
+    animation: spin-slow 10s linear infinite;
+  }
